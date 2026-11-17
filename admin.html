@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة الإدارة | Al-Israa Law Center</title>
+    <meta name="description" content="لوحة تحكم الإدارة لمنصة مركز الإسراء." />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="theme-dark">
+    <header class="site-header">
+      <nav class="navbar container">
+        <div class="brand-wrap">
+          <a href="index.html" class="brand">
+            <img src="assets/logo.svg" alt="Al-Israa Law Center Logo" class="brand-logo" />
+            <div class="brand-text">
+              <span class="brand-name">Al-Israa</span>
+              <small>Law Center</small>
+            </div>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="courses.html">المقررات</a>
+          <a href="community.html">المجتمع</a>
+          <a href="dashboard.html">الدashboard</a>
+        </div>
+        <div class="nav-actions">
+          <button class="lang-toggle" aria-label="Toggle language"><span>EN</span></button>
+          <button class="theme-toggle" aria-label="Toggle theme"><i class="icon">☀</i></button>
+          <a href="login.html" class="btn btn-primary">تسجيل الخروج</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container section-space admin-page">
+      <div class="section-heading inline-header">
+        <div>
+          <span class="eyebrow">الإدارة</span>
+          <h1>لوحة التحكم الرئيسية</h1>
+        </div>
+        <div class="admin-bell-wrap">
+          <button class="bell-btn">🔔</button>
+          <span class="notif-count">3</span>
+        </div>
+      </div>
+
+      <div class="admin-grid">
+        <section class="glass-card panel-block">
+          <h3>إدارة المقررات</h3>
+          <form class="admin-form">
+            <input type="text" placeholder="اسم المقرر" />
+            <input type="text" placeholder="السعر" />
+            <textarea rows="4" placeholder="وصف المقرر"></textarea>
+            <button class="btn btn-primary">إضافة مقرر</button>
+          </form>
+        </section>
+
+        <section class="glass-card panel-block">
+          <h3>طلبات التسجيل</h3>
+          <div id="adminRequests" class="request-list"></div>
+        </section>
+      </div>
+
+      <section class="glass-card panel-block section-space-sm">
+        <h3>قائمة الطلاب</h3>
+        <div id="studentDirectory" class="directory-table"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <img src="assets/logo.svg" alt="logo" class="brand-logo" />
+            <div class="brand-text">
+              <span class="brand-name">Al-Israa</span>
+              <small>Law Center</small>
+            </div>
+          </a>
+        </div>
+        <div>
+          <h4>مركز الإسراء</h4>
+          <p>تعليم قانوني متميز لكل طلاب الحقوق.</p>
+        </div>
+        <div>
+          <h4>روابط</h4>
+          <ul>
+            <li><a href="courses.html">المقررات</a></li>
+            <li><a href="community.html">المجتمع</a></li>
+            <li><a href="login.html">تسجيل الدخول</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

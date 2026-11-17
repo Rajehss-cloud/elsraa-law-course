@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إنشاء حساب | Al-Israa Law Center</title>
+    <meta name="description" content="إنشاء حساب طالب جديد في منصة مركز الإسراء." />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="theme-dark auth-page">
+    <div class="auth-shell container">
+      <div class="auth-card glass-card">
+        <div class="auth-brand">
+          <img src="assets/logo.svg" alt="logo" class="brand-logo" />
+          <div>
+            <h1>مركز الإسراء</h1>
+            <p>سجل الآن وابدأ رحلتك</p>
+          </div>
+        </div>
+
+        <h2>إنشاء حساب</h2>
+
+        <form id="registerForm" class="auth-form">
+          <div class="field-row">
+            <div class="field-group">
+              <label for="fullName">الاسم الكامل</label>
+              <input id="fullName" type="text" required />
+            </div>
+            <div class="field-group">
+              <label for="academicYear">الفرقة الدراسية</label>
+              <select id="academicYear">
+                <option>الفرقة الأولى</option>
+                <option>الفرقة الثانية</option>
+                <option>الفرقة الثالثة</option>
+                <option>الفرقة الرابعة</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="faculty">الكلية والجامعة</label>
+              <input id="faculty" type="text" placeholder="كلية الحقوق - جامعة الزقازيق" required />
+            </div>
+            <div class="field-group">
+              <label for="phone">رقم الهاتف</label>
+              <input id="phone" type="tel" required />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="email">البريد الإلكتروني</label>
+              <input id="email" type="email" required />
+            </div>
+            <div class="field-group">
+              <label for="password">كلمة المرور</label>
+              <input id="password" type="password" required />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">إن��اء الحساب</button>
+        </form>
+
+        <div class="auth-footer">
+          <span>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

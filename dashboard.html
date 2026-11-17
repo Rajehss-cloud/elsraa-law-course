@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة الطالب | Al-Israa Law Center</title>
+    <meta name="description" content="لوحة الطالب في نظام مركز الإسراء التعليمي." />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="theme-dark">
+    <header class="site-header">
+      <nav class="navbar container">
+        <div class="brand-wrap">
+          <a href="index.html" class="brand">
+            <img src="assets/logo.svg" alt="Al-Israa Law Center Logo" class="brand-logo" />
+            <div class="brand-text">
+              <span class="brand-name">Al-Israa</span>
+              <small>Law Center</small>
+            </div>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="courses.html">المقررات</a>
+          <a href="community.html">المجتمع</a>
+          <a href="dashboard.html">الدashboard</a>
+        </div>
+        <div class="nav-actions">
+          <button class="lang-toggle" aria-label="Toggle language"><span>EN</span></button>
+          <button class="theme-toggle" aria-label="Toggle theme"><i class="icon">☀</i></button>
+          <a href="login.html" class="btn btn-primary">تسجيل الخروج</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container section-space dashboard-page">
+      <div class="dashboard-grid">
+        <aside class="dashboard-side glass-card">
+          <h3>لوحة الطالب</h3>
+          <div class="student-profile">
+            <div class="avatar-circle">م</div>
+            <div>
+              <strong id="studentName">محمد علي</strong>
+              <small id="studentFaculty">كلية الحقوق - جامعة الزقازيق</small>
+            </div>
+          </div>
+
+          <ul class="side-menu">
+            <li class="active">دوراتي</li>
+            <li>المواعيد</li>
+            <li>التقييمات</li>
+            <li>الملف الشخصي</li>
+          </ul>
+        </aside>
+
+        <section class="dashboard-main">
+          <div class="dash-cards">
+            <div class="mini-stat glass-card">
+              <span>دوراتي</span>
+              <strong id="enrolledCount">3</strong>
+            </div>
+            <div class="mini-stat glass-card">
+              <span>التقدّم</span>
+              <strong>76%</strong>
+            </div>
+            <div class="mini-stat glass-card">
+              <span>كود الحماية</span>
+              <strong id="antiPiracyCode">A-LC-1024</strong>
+            </div>
+          </div>
+
+          <div class="content-panel glass-card">
+            <h3>دوراتي الحالية</h3>
+            <div id="studentCourses" class="student-course-list"></div>
+          </div>
+
+          <div class="content-panel glass-card">
+            <h3>محتوى الدرس</h3>
+            <div class="video-player-shell">
+              <div class="watermarked-video">
+                <div class="video-watermark">ID: <span id="studentCode">A-LC-1024</span></div>
+                <div class="video-player-controls">
+                  <button>⏮</button>
+                  <button>▶</button>
+                  <button>⏭</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <img src="assets/logo.svg" alt="logo" class="brand-logo" />
+            <div class="brand-text">
+              <span class="brand-name">Al-Israa</span>
+              <small>Law Center</small>
+            </div>
+          </a>
+        </div>
+        <div>
+          <h4>مركز الإسراء</h4>
+          <p>تعليم قانوني متميز لكل طلاب الحقوق.</p>
+        </div>
+        <div>
+          <h4>روابط</h4>
+          <ul>
+            <li><a href="courses.html">المقررات</a></li>
+            <li><a href="community.html">المجتمع</a></li>
+            <li><a href="login.html">تسجيل الدخول</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
